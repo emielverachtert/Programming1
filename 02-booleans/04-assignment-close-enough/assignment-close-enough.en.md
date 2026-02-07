@@ -14,16 +14,16 @@ True
 >>> close_enough(0, 0.05)
 True
 
->>> close_enough(0, 0.1)
+>>> close_enough(0, 0.09)
 True
 
->>> close_enough(0, -0.1)
+>>> close_enough(0, -0.09)
 True
 
 >>> close_enough(0, 0.2)
 False
 
->>> close_enough(18.5, 18.6)
+>>> close_enough(18.5, 18.59)
 True
 ```
 
