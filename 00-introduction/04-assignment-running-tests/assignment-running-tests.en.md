@@ -15,10 +15,8 @@ Create a file named `student.py` in this chapter's directory and add the followi
 print('Hello')
 ```
 
-
-We've written tests in a file named `test.py`.
+We've written tests in a file named `test.py`. In these tests we test whether the output of the code is `"Hello!"` (note the exclamation mark).
 You can run them as follows:
-
 
 ```python
 $ pytest test.py
@@ -47,9 +45,7 @@ FAILED test-say-hello.py::test_script - AssertionError: Expected output is 'Hell
 1 failed in 0.06s
 ```
 
-Uh oh.
-The tests failed.
-It seems we did something wrong.
+Of course the test failed because we didn't add the exclamation mark to our string `'Hello'`.
 
 The output might be a bit overwhelming at first.
 Let's take a good look at it.
@@ -59,7 +55,7 @@ There are two sections: the `FAILURE` section followed by the `short test summar
   At this point, this is overkill, so let's just ignore it.
 * The summary is much clearer: a single line containing a brief description of the problem: `Expected output is 'Hello!', instead you printed 'Hello'`.
 
-It should be clear how to fix it.
+We can fix the code by adding the exclamation mark `!` to the string.
 
 ## TASK
 Fix the code in `student.py` and rerun the tests.
